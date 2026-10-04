@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  height: 100vh;
+
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url('./Image/مطعم فاخر بإطلالة غروب ساحرة.png');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+
+.navbar {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 25px 7%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 10;
+
+  background: transparent;
+}
+
+
+.logo {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  position: relative;
+}
+
+
+
+.nav-links a::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+
+  width: 0;
+  height: 2px;
+
+  background: #d9b36c;
+
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+
+
+.book-btn {
+  padding: 12px 22px;
+
+  background: transparent;
+  color: white;
+
+  border: 1px solid white;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  background: white;
+  color: black;
+}
+
+.hero {
+    height: 100vh;
+
+    background-image:
+      linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+      url('./Image/مطعم فاخر بإطلالة غروب ساحرة.png');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+
+.hero-content {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 80%;
+
+    text-align: center;
+
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    font-family: Georgia, serif;
+    font-weight: normal;
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+}
+
+
+.hero-content h1 span {
+    color: #e66a0a;
+}
+
+.hero-content p {
+    max-width: 750px;
+
+    margin: 0 auto 30px;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: #f1f1f1;
+}
+
+.menu-btn {
+    display: inline-block;
+
+    padding: 15px 28px;
+
+    background: #e66a0a;
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.menu-btn:hover {
+    background: #ff7b19;
+}
